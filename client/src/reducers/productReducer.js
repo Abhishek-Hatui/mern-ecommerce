@@ -18,7 +18,7 @@ export const getAllProductsReducer = (state={products: []}, action)=>{
 }
 
 
-export const getProductByIdReducer = (state={product: []}, action)=>{
+export const getProductByIdReducer = (state={product : []}, action)=>{
 
     switch(action.type){
         case 'GET_PRODUCTBYID_REQUEST' : return{

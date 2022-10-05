@@ -14,7 +14,7 @@ router.get("/getallproducts",(req,res)=>{
 });
 
 router.post("/getproductbyid",(req, res)=>{
-    Product.find({_id : req.body.productid},(err, docs)=>{
+    Product.find({_id : req.params.productid},(err, docs)=>{
         if(!err){
             res.send(docs[0]);
         }
